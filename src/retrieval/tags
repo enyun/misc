@@ -1,0 +1,84 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DocInfo	types.h	/^struct DocInfo {$/;"	s	namespace:recomm_engine::retrieving
+DocIterator	index_reader.h	/^typedef DocInfo DocIterator;$/;"	t	namespace:recomm_engine::retrieving
+IndexReader	index_reader.cpp	/^        IndexReader::IndexReader() {$/;"	f	class:recomm_engine::retrieving::IndexReader
+IndexReader	index_reader.h	/^class IndexReader {$/;"	c	namespace:recomm_engine::retrieving
+KeyOfDoc	types.h	/^struct KeyOfDoc {$/;"	s	namespace:recomm_engine::retrieving
+MAX_DOC_RETURN	retrieval_handler.h	/^#define  MAX_DOC_RETURN /;"	d
+Ranker	ranker.cpp	/^Ranker::Ranker() {$/;"	f	class:recomm_engine::retrieving::Ranker
+Ranker	ranker.h	/^class Ranker {$/;"	c	namespace:recomm_engine::retrieving
+RankerDoc	ranker.h	/^typedef DocInfo RankerDoc;$/;"	t	namespace:recomm_engine::retrieving
+RetrievalHandler	retrieval_handler.cpp	/^        RetrievalHandler::RetrievalHandler() {$/;"	f	class:recomm_engine::retrieving::RetrievalHandler
+RetrievalHandler	retrieval_handler.h	/^        class RetrievalHandler {$/;"	c	namespace:recomm_engine::retrieving
+SRC_RETRIEVAL_INDEX_READER_H_	index_reader.h	/^#define SRC_RETRIEVAL_INDEX_READER_H_$/;"	d
+SRC_RETRIEVAL_RANKER_H_	ranker.h	/^#define  SRC_RETRIEVAL_RANKER_H_$/;"	d
+SRC_RETRIEVAL_RESULT_SET_H_	result_set.h	/^#define SRC_RETRIEVAL_RESULT_SET_H_$/;"	d
+SRC_RETRIEVAL_RETRIEVAL_HANDLER_H_	retrieval_handler.h	/^#define SRC_RETRIEVAL_RETRIEVAL_HANDLER_H_$/;"	d
+SRC_RETRIEVAL_TYPES_H_	types.h	/^#define  SRC_RETRIEVAL_TYPES_H_$/;"	d
+addHitKeywordToDocInfo	index_reader.cpp	/^        void IndexReader::addHitKeywordToDocInfo(const KeyOfDoc& key_info,$/;"	f	class:recomm_engine::retrieving::IndexReader
+beginIntersect	index_reader.cpp	/^        int IndexReader::beginIntersect(const idl::RetrievalRequest& request) {$/;"	f	class:recomm_engine::retrieving::IndexReader
+close	index_reader.cpp	/^        int IndexReader::close() {$/;"	f	class:recomm_engine::retrieving::IndexReader
+close	ranker.cpp	/^int Ranker::close() {$/;"	f	class:recomm_engine::retrieving::Ranker
+compute_rank	ranker.cpp	/^double Ranker::compute_rank(RankerDoc* doc) {$/;"	f	class:recomm_engine::retrieving::Ranker
+doc	result_set.h	/^                entry doc(int index) {$/;"	f	class:recomm_engine::retrieving::result_set
+doc_num	result_set.h	/^                inline int doc_num() const {$/;"	f	class:recomm_engine::retrieving::result_set
+dump	result_set.cpp	/^int result_set::dump() {$/;"	f	class:recomm_engine::retrieving::result_set
+endIntersect	index_reader.cpp	/^        int IndexReader::endIntersect() {$/;"	f	class:recomm_engine::retrieving::IndexReader
+entry	result_set.h	/^                struct entry {$/;"	s	class:recomm_engine::retrieving::result_set
+getGlobalIDFromLocalID	index_reader.cpp	/^        int64_t IndexReader::getGlobalIDFromLocalID(const uint32_t& local_id) {$/;"	f	class:recomm_engine::retrieving::IndexReader
+getRequest	main.cpp	/^int getRequest(FILE *fp, std::vector<idl::RetrievalRequestInfo>& keywords) {$/;"	f
+indexing	index_reader.h	/^namespace indexing {$/;"	n	namespace:recomm_engine
+init	result_set.cpp	/^int result_set::init() {$/;"	f	class:recomm_engine::retrieving::result_set
+insert_doc	result_set.h	/^                inline void insert_doc(int64_t story_id, double score) {$/;"	f	class:recomm_engine::retrieving::result_set
+key_info	types.h	/^  std::vector<KeyOfDoc> key_info;$/;"	m	struct:recomm_engine::retrieving::DocInfo
+keyword_id	types.h	/^  int64_t keyword_id;$/;"	m	struct:recomm_engine::retrieving::KeyOfDoc
+m_doc_hits_info	index_reader.h	/^  std::map< uint32_t, std::vector<KeyOfDoc> > m_doc_hits_info;$/;"	m	class:recomm_engine::retrieving::IndexReader
+m_doc_num	result_set.h	/^                int m_doc_num;$/;"	m	class:recomm_engine::retrieving::result_set
+m_docs	result_set.h	/^                std::vector<entry> m_docs;$/;"	m	class:recomm_engine::retrieving::result_set
+m_iter	index_reader.h	/^  std::map< uint32_t, std::vector<KeyOfDoc> >::iterator m_iter;$/;"	m	class:recomm_engine::retrieving::IndexReader
+m_keyword_info	index_reader.h	/^  std::vector<idl::RetrievalRequestInfo> m_keyword_info;$/;"	m	class:recomm_engine::retrieving::IndexReader
+m_max_num	result_set.h	/^                int m_max_num;$/;"	m	class:recomm_engine::retrieving::result_set
+m_ranker	retrieval_handler.h	/^                Ranker *m_ranker;   \/\/ compute score for per doc$/;"	m	class:recomm_engine::retrieving::RetrievalHandler
+main	main.cpp	/^int main(int argc, char ** argv) {$/;"	f
+makeReply	retrieval_handler.cpp	/^        void RetrievalHandler::makeReply(idl::RetrievalResponse* response,$/;"	f	class:recomm_engine::retrieving::RetrievalHandler
+nextDoc	index_reader.cpp	/^        int IndexReader::nextDoc(DocIterator* doc) {$/;"	f	class:recomm_engine::retrieving::IndexReader
+open	index_reader.cpp	/^        int IndexReader::open() {$/;"	f	class:recomm_engine::retrieving::IndexReader
+open	retrieval_handler.cpp	/^        int RetrievalHandler::open() {$/;"	f	class:recomm_engine::retrieving::RetrievalHandler
+operator <	result_set.h	/^                    bool operator < (const entry &right) const {$/;"	f	struct:recomm_engine::retrieving::result_set::entry
+printRequest	main.cpp	/^void printRequest(const idl::RetrievalRequest& request) {$/;"	f
+printResponse	main.cpp	/^void printResponse(idl::RetrievalResponse& response) {$/;"	f
+recomm_engine	index_reader.cpp	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	index_reader.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	ranker.cpp	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	ranker.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	result_set.cpp	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	result_set.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	retrieval_handler.cpp	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	retrieval_handler.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	types.h	/^namespace recomm_engine {$/;"	n
+result_set	result_set.cpp	/^result_set::result_set() {$/;"	f	class:recomm_engine::retrieving::result_set
+result_set	result_set.h	/^        class result_set {$/;"	c	namespace:recomm_engine::retrieving
+retrieve	retrieval_handler.cpp	/^        int RetrievalHandler::retrieve(const idl::RetrievalRequest& request,$/;"	f	class:recomm_engine::retrieving::RetrievalHandler
+retrieving	index_reader.cpp	/^    namespace retrieving {$/;"	n	namespace:recomm_engine	file:
+retrieving	index_reader.h	/^namespace retrieving {$/;"	n	namespace:recomm_engine
+retrieving	ranker.cpp	/^namespace retrieving {$/;"	n	namespace:recomm_engine	file:
+retrieving	ranker.h	/^namespace retrieving {$/;"	n	namespace:recomm_engine
+retrieving	result_set.cpp	/^namespace retrieving {$/;"	n	namespace:recomm_engine	file:
+retrieving	result_set.h	/^    namespace retrieving {$/;"	n	namespace:recomm_engine
+retrieving	retrieval_handler.cpp	/^    namespace retrieving {$/;"	n	namespace:recomm_engine	file:
+retrieving	retrieval_handler.h	/^    namespace retrieving {$/;"	n	namespace:recomm_engine
+retrieving	types.h	/^namespace retrieving {$/;"	n	namespace:recomm_engine
+score	result_set.h	/^                    double   score;$/;"	m	struct:recomm_engine::retrieving::result_set::entry
+set_max_num	result_set.h	/^                inline void set_max_num(int num) {$/;"	f	class:recomm_engine::retrieving::result_set
+story_id	result_set.h	/^                    int64_t  story_id;$/;"	m	struct:recomm_engine::retrieving::result_set::entry
+story_id	types.h	/^  int64_t story_id;$/;"	m	struct:recomm_engine::retrieving::DocInfo
+weight_in_doc	types.h	/^  double weight_in_doc;$/;"	m	struct:recomm_engine::retrieving::KeyOfDoc
+~IndexReader	index_reader.cpp	/^        IndexReader::~IndexReader() {$/;"	f	class:recomm_engine::retrieving::IndexReader
+~Ranker	ranker.cpp	/^Ranker::~Ranker() {$/;"	f	class:recomm_engine::retrieving::Ranker
+~RetrievalHandler	retrieval_handler.cpp	/^        RetrievalHandler::~RetrievalHandler() {$/;"	f	class:recomm_engine::retrieving::RetrievalHandler
+~result_set	result_set.cpp	/^result_set::~result_set() {$/;"	f	class:recomm_engine::retrieving::result_set

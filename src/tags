@@ -1,0 +1,220 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddNode	redis_cluster.cc	/^uint32 HashRing<Hash>::AddNode(const std::string& node_name, const unsigned int replicas) {$/;"	f	class:redis_cluster::HashRing
+AddProfile	story_profile_storage.cc	/^bool StoryProfileStorage::AddProfile(int64_t key, const idl::StoryProfile& value) {     $/;"	f	class:recomm_engine::StoryProfileStorage
+AlgoPluginManager	algo_plugin_manager.cc	/^    AlgoPluginManager::AlgoPluginManager()$/;"	f	class:recomm_engine::AlgoPluginManager
+AlgoPluginManager	algo_plugin_manager.h	/^    class AlgoPluginManager {$/;"	c	namespace:recomm_engine
+Bootstrap	local_dict.cc	/^bool LocalDict::Bootstrap(const std::string& filename) {$/;"	f	class:recomm_engine::LocalDict
+CityHash	redis_cluster.h	/^struct CityHash {$/;"	s	namespace:redis_cluster
+Client	redispp.cc	/^Client::Client(const std::string &ip, int port) {$/;"	f	class:redis::Client
+Client	redispp.h	/^class Client {$/;"	c	namespace:redis
+Connect	redispp.cc	/^bool Client::Connect() {$/;"	f	class:redis::Client
+Delete	redispp.cc	/^int Client::Delete(const char *key, int key_len) {$/;"	f	class:redis::Client
+Disconnect	redispp.cc	/^bool Client::Disconnect() {$/;"	f	class:redis::Client
+Get	local_dict.cc	/^int LocalDict::Get(const leveldb::Slice& key,$/;"	f	class:recomm_engine::LocalDict
+Get	redispp.cc	/^int Client::Get(const char *key, int key_len, std::string *value) {$/;"	f	class:redis::Client
+GetInstance	algo_plugin_manager.h	/^            static inline AlgoPluginManager* GetInstance() {$/;"	f	class:recomm_engine::AlgoPluginManager
+GetInstance	story_profile_storage.h	/^  inline static StoryProfileStorage* GetInstance() {$/;"	f	class:recomm_engine::StoryProfileStorage
+GetIterator	story_profile_storage.cc	/^StoryProfileStorage::Iterator* StoryProfileStorage::GetIterator(bool reverse) {$/;"	f	class:recomm_engine::StoryProfileStorage
+GetNode	redis_cluster.cc	/^const std::string& HashRing<Hash>::GetNode(const std::string& key) const {$/;"	f	class:redis_cluster::HashRing
+GetPluginFromDylib	algo_plugin_manager.cc	/^    recomm_engine::IAlgoPlugin* GetPluginFromDylib($/;"	f	namespace:__anon1
+GetProfile	story_profile_storage.cc	/^bool StoryProfileStorage::GetProfile(int64_t key, idl::StoryProfile* value) {$/;"	f	class:recomm_engine::StoryProfileStorage
+GetRedisNode	redis_cluster.cc	/^bool RedisCluster::GetRedisNode(const std::string& key,$/;"	f	class:redis_cluster::RedisCluster
+GetRedisNode	redis_cluster.cc	/^const std::string RedisCluster::GetRedisNode(const std::string& key) {$/;"	f	class:redis_cluster::RedisCluster
+GetUserProfile	user_profile_storage.cc	/^int UserProfileStorage::GetUserProfile($/;"	f	class:recomm_engine::UserProfileStorage
+HashGet	redispp.cc	/^int Client::HashGet(const char *key, int key_len,$/;"	f	class:redis::Client
+HashGetAllFields	redispp.cc	/^int Client::HashGetAllFields(const char *key, int key_len, std::map<std::string, std::string> *field_values) {$/;"	f	class:redis::Client
+HashRing	redis_cluster.h	/^    HashRing(): hash_(CityHash()) {}$/;"	f	class:redis_cluster::HashRing
+HashRing	redis_cluster.h	/^    HashRing(const Hash& hash): hash_(hash) {}$/;"	f	class:redis_cluster::HashRing
+HashRing	redis_cluster.h	/^class HashRing {$/;"	c	namespace:redis_cluster
+HashSetEx	redispp.cc	/^bool Client::HashSetEx(const char *key, int key_len,$/;"	f	class:redis::Client
+IncrementUserProfile	user_profile_storage.cc	/^void UserProfileStorage::IncrementUserProfile($/;"	f	class:recomm_engine::UserProfileStorage
+InitEnvironment	server.cpp	/^void InitEnvironment() {$/;"	f
+Initialize	algo_plugin_manager.cc	/^    bool AlgoPluginManager::Initialize(const std::string& config_file) {$/;"	f	class:recomm_engine::AlgoPluginManager
+Initialize	redis_cluster.cc	/^bool RedisCluster::Initialize(const std::string& config_file) {$/;"	f	class:redis_cluster::RedisCluster
+Initialize	story_profile_storage.cc	/^bool StoryProfileStorage::Initialize(const std::string &filename) {$/;"	f	class:recomm_engine::StoryProfileStorage
+Instance	monitor_manager.h	/^            inline static MonitorManager* Instance() {$/;"	f	class:recomm_engine::MonitorManager
+IsConnected	redispp.cc	/^bool Client::IsConnected() {$/;"	f	class:redis::Client
+Iterator	story_profile_storage.cc	/^StoryProfileStorage::Iterator::Iterator(::leveldb::DB* db, bool reverse) $/;"	f	class:recomm_engine::StoryProfileStorage::Iterator
+Iterator	story_profile_storage.h	/^class StoryProfileStorage::Iterator {$/;"	c	class:recomm_engine::StoryProfileStorage
+Key	story_profile_storage.cc	/^::leveldb::Slice StoryProfileStorage::Iterator::Key() {$/;"	f	class:recomm_engine::StoryProfileStorage::Iterator
+ListPopLeft	redispp.cc	/^int Client::ListPopLeft(const char *key, int key_len, std::string *value) {$/;"	f	class:redis::Client
+ListPopRight	redispp.cc	/^int Client::ListPopRight(const char *key, int key_len, std::string *value) {$/;"	f	class:redis::Client
+ListPushLeft	redispp.cc	/^bool Client::ListPushLeft(const char *key, int key_len,$/;"	f	class:redis::Client
+ListPushRight	redispp.cc	/^bool Client::ListPushRight(const char *key, int key_len,$/;"	f	class:redis::Client
+LoadPlugins	algo_plugin_manager.cc	/^    bool AlgoPluginManager::LoadPlugins() {$/;"	f	class:recomm_engine::AlgoPluginManager
+LoadRedisesMaster	redis_cluster.cc	/^bool RedisCluster::LoadRedisesMaster() {$/;"	f	class:redis_cluster::RedisCluster
+LoadRedisesSlave	redis_cluster.cc	/^bool RedisCluster::LoadRedisesSlave() {$/;"	f	class:redis_cluster::RedisCluster
+LocalDict	local_dict.cc	/^LocalDict::LocalDict(const std::string& local_path, int memory) {$/;"	f	class:recomm_engine::LocalDict
+LocalDict	local_dict.h	/^class LocalDict {$/;"	c	namespace:recomm_engine
+MonitorManager	monitor_manager.cc	/^MonitorManager::MonitorManager() {$/;"	f	class:recomm_engine::MonitorManager
+MonitorManager	monitor_manager.h	/^    class MonitorManager {$/;"	c	namespace:recomm_engine
+MultiGet	redispp.cc	/^bool Client::MultiGet(const std::vector<std::string> &keys,$/;"	f	class:redis::Client
+MultiHashGet	redispp.cc	/^bool Client::MultiHashGet(const std::vector<std::string> &keys,$/;"	f	class:redis::Client
+MultiHashGetAllFields	redispp.cc	/^bool Client::MultiHashGetAllFields(const std::vector<std::string> &keys,$/;"	f	class:redis::Client
+MultiHashSetEx	redispp.cc	/^bool Client::MultiHashSetEx(const std::vector<std::string> &keys,$/;"	f	class:redis::Client
+MultiListPopLeft	redispp.cc	/^bool Client::MultiListPopLeft(const std::vector<std::string> &keys,$/;"	f	class:redis::Client
+MultiListPopRight	redispp.cc	/^bool Client::MultiListPopRight(const std::vector<std::string> &keys,$/;"	f	class:redis::Client
+MultiSetEx	redispp.cc	/^bool Client::MultiSetEx(const std::vector<std::string> &keys,$/;"	f	class:redis::Client
+Next	story_profile_storage.cc	/^bool StoryProfileStorage::Iterator::Next() {$/;"	f	class:recomm_engine::StoryProfileStorage::Iterator
+Node	redis_cluster.h	/^    } Node;$/;"	t	class:redis_cluster::HashRing	typeref:struct:redis_cluster::HashRing::Node_t
+NodeMap	redis_cluster.h	/^    typedef std::map<uint32, Node> NodeMap;$/;"	t	class:redis_cluster::HashRing
+Node_t	redis_cluster.h	/^    typedef struct Node_t {$/;"	s	class:redis_cluster::HashRing
+PeriodicalReloadingThread	algo_plugin_manager.cc	/^    void AlgoPluginManager::PeriodicalReloadingThread(AlgoPluginManager* handle) {$/;"	f	class:recomm_engine::AlgoPluginManager
+Ping	redispp.cc	/^bool Client::Ping() {$/;"	f	class:redis::Client
+Purge	local_dict.cc	/^bool LocalDict::Purge() {$/;"	f	class:recomm_engine::LocalDict
+Put	local_dict.cc	/^bool LocalDict::Put(const leveldb::Slice& key,$/;"	f	class:recomm_engine::LocalDict
+PutUserProfile	user_profile_storage.cc	/^int UserProfileStorage::PutUserProfile($/;"	f	class:recomm_engine::UserProfileStorage
+RecommEngineHandler	recomm_engine_handler.cc	/^    RecommEngineHandler::RecommEngineHandler()$/;"	f	class:recomm_engine::RecommEngineHandler
+RecommEngineHandler	recomm_engine_handler.h	/^class RecommEngineHandler : virtual public idl::RecommEngineIf {$/;"	c	namespace:recomm_engine
+Reconnect	redispp.cc	/^bool Client::Reconnect() {$/;"	f	class:redis::Client
+RedisCluster	redis_cluster.cc	/^RedisCluster::RedisCluster() {$/;"	f	class:redis_cluster::RedisCluster
+RedisCluster	redis_cluster.h	/^class RedisCluster{$/;"	c	namespace:redis_cluster
+RedisPair	redis_cluster.h	/^    } RedisPair;$/;"	t	class:redis_cluster::RedisCluster	typeref:struct:redis_cluster::RedisCluster::__anon2
+RemoveNode	redis_cluster.cc	/^void HashRing<Hash>::RemoveNode(const std::string& node_name) {$/;"	f	class:redis_cluster::HashRing
+Select	algo_plugin_manager.cc	/^    const boost::shared_ptr<IAlgoPlugin> AlgoPluginManager::Select(const std::string& id) {$/;"	f	class:recomm_engine::AlgoPluginManager
+Select	algo_plugin_manager.cc	/^    const boost::shared_ptr<IAlgoPlugin> AlgoPluginManager::Select(uint64_t id) {$/;"	f	class:recomm_engine::AlgoPluginManager
+ServerMap	redis_cluster.h	/^    typedef std::map<std::string, RedisPair> ServerMap;$/;"	t	class:redis_cluster::RedisCluster
+SetEx	redispp.cc	/^bool Client::SetEx(const char *key, int key_len, const char *value, int value_len, int life_in_seconds) {$/;"	f	class:redis::Client
+SetReadWriteTimeOut	redispp.cc	/^bool Client::SetReadWriteTimeOut(int timeout_in_ms) {$/;"	f	class:redis::Client
+SetToRedis	user_profile_storage.cc	/^bool UserProfileStorage::SetToRedis($/;"	f	class:recomm_engine::UserProfileStorage
+StoryManagementHandler	story_management_handler.cc	/^StoryManagementHandler::StoryManagementHandler() {$/;"	f	class:recomm_engine::StoryManagementHandler
+StoryManagementHandler	story_management_handler.h	/^class StoryManagementHandler : virtual public idl::StoryManagementIf {$/;"	c	namespace:recomm_engine
+StoryProfileStorage	story_profile_storage.cc	/^StoryProfileStorage::StoryProfileStorage() {$/;"	f	class:recomm_engine::StoryProfileStorage
+StoryProfileStorage	story_profile_storage.h	/^class StoryProfileStorage {$/;"	c	namespace:recomm_engine
+ToString	redis_cluster.cc	/^std::string HashRing<Hash>::ToString(unsigned int r) {$/;"	f	class:redis_cluster::HashRing
+UserProfileStorage	user_profile_storage.cc	/^UserProfileStorage::UserProfileStorage() $/;"	f	class:recomm_engine::UserProfileStorage
+UserProfileStorage	user_profile_storage.h	/^class UserProfileStorage {$/;"	c	namespace:recomm_engine
+Valid	local_dict.cc	/^bool LocalDict::Valid() {$/;"	f	class:recomm_engine::LocalDict
+Value	story_profile_storage.cc	/^::leveldb::Slice StoryProfileStorage::Iterator::Value() {$/;"	f	class:recomm_engine::StoryProfileStorage::Iterator
+WARN_UNUSED_RESULT	redispp.h	/^                             std::vector<int> *ret_codes) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                         std::vector<int> *ret_codes) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                        std::vector<int> *ret_codes) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                       std::map<std::string, std::string> *field_values) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                      int life_in_seconds) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                     const char *value, int value_len, int32 *list_length) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                    const char *value, int value_len, int32 *list_length) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                    std::vector<int> *ret_codes) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                  const std::vector<int> &life_in_seconds) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                  int life_in_seconds) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                 int life_in_seconds) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^                std::vector<int> *ret_codes) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^              std::string *value) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^             int life_in_seconds) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^  bool Connect() WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^  bool IsConnected() WARN_UNUSED_RESULT;  \/\/ 检查连接是否异常断开$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^  bool Ping() WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^  bool Reconnect() WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^  int Delete(const char *key, int key_len) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^  int Get(const char *key, int key_len, std::string *value) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^  int ListPopLeft(const char *key, int key_len, std::string *value) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+WARN_UNUSED_RESULT	redispp.h	/^  int ListPopRight(const char *key, int key_len, std::string *value) WARN_UNUSED_RESULT;$/;"	m	class:redis::Client
+_RECOMM_ENGINE_ALGO_PLUGIN_MANAGER_H_	algo_plugin_manager.h	/^#define _RECOMM_ENGINE_ALGO_PLUGIN_MANAGER_H_$/;"	d
+_RECOMM_ENGINE_HANDLER_H_	recomm_engine_handler.h	/^#define _RECOMM_ENGINE_HANDLER_H_$/;"	d
+_RECOMM_ENGINE_MONITOR_MANAGER_H_	monitor_manager.h	/^#define _RECOMM_ENGINE_MONITOR_MANAGER_H_$/;"	d
+_RECOMM_ENGINE_STORY_MANAGEMENT_HANDLER_H_	story_management_handler.h	/^#define _RECOMM_ENGINE_STORY_MANAGEMENT_HANDLER_H_$/;"	d
+_RECOMM_ENGINE_STORY_PROFILE_STORAGE_H_	story_profile_storage.h	/^#define _RECOMM_ENGINE_STORY_PROFILE_STORAGE_H_$/;"	d
+_RECOMM_ENGINE_USER_PROFILE_STORAGE_H_	user_profile_storage.h	/^#define _RECOMM_ENGINE_USER_PROFILE_STORAGE_H_$/;"	d
+_REDIS_CLUSTER_H_	redis_cluster.h	/^#define _REDIS_CLUSTER_H_$/;"	d
+_REDIS_PLUSPLUS_H_	redispp.h	/^#define _REDIS_PLUSPLUS_H_$/;"	d
+_UTIL_LOCAL_DICT_H_	local_dict.h	/^#define _UTIL_LOCAL_DICT_H_$/;"	d
+add_story	story_management_handler.cc	/^void StoryManagementHandler::add_story(idl::StoryAddingResponse& _return,$/;"	f	class:recomm_engine::StoryManagementHandler
+aliveSince	recomm_engine_handler.h	/^  inline int64_t aliveSince() {return 0;}$/;"	f	class:recomm_engine::RecommEngineHandler
+config_file_	algo_plugin_manager.h	/^            std::string config_file_;$/;"	m	class:recomm_engine::AlgoPluginManager
+config_file_	redis_cluster.h	/^    std::string config_file_;$/;"	m	class:redis_cluster::RedisCluster
+create_plugin_function_t	algo_plugin_manager.cc	/^    typedef recomm_engine::IAlgoPlugin *(*create_plugin_function_t)();$/;"	t	class:__anon1::recomm_engine	file:
+ctx_	redispp.h	/^  redisContext *ctx_;$/;"	m	class:redis::Client
+current_index_	algo_plugin_manager.h	/^            boost::atomic<int> current_index_;  \/\/ separate read\/write instance$/;"	m	class:recomm_engine::AlgoPluginManager
+db_	story_profile_storage.h	/^  boost::scoped_ptr<LocalDict> db_;$/;"	m	class:recomm_engine::StoryProfileStorage
+default_plugin_	algo_plugin_manager.h	/^            boost::shared_ptr<IAlgoPlugin> default_plugin_[2];$/;"	m	class:recomm_engine::AlgoPluginManager
+getCounter	recomm_engine_handler.h	/^  inline int64_t getCounter(const std::string& key) {return 0;}$/;"	f	class:recomm_engine::RecommEngineHandler
+getCounters	recomm_engine_handler.h	/^  inline void getCounters(std::map<std::string, int64_t>& _return) {};$/;"	f	class:recomm_engine::RecommEngineHandler
+getCpuProfile	recomm_engine_handler.h	/^  inline void getCpuProfile(std::string& _return, const int32_t profileDurationInSec) {$/;"	f	class:recomm_engine::RecommEngineHandler
+getName	recomm_engine_handler.h	/^  inline void getName(std::string& _return) {$/;"	f	class:recomm_engine::RecommEngineHandler
+getOption	recomm_engine_handler.h	/^  inline void getOption(std::string& _return, const std::string& key) {$/;"	f	class:recomm_engine::RecommEngineHandler
+getOptions	recomm_engine_handler.h	/^  inline void getOptions(std::map<std::string, std::string> & _return) {$/;"	f	class:recomm_engine::RecommEngineHandler
+getStatus	recomm_engine_handler.h	/^  inline ::facebook::fb303::fb_status getStatus() {return ::facebook::fb303::ALIVE;}$/;"	f	class:recomm_engine::RecommEngineHandler
+getStatusDetails	recomm_engine_handler.h	/^  inline void getStatusDetails(std::string _return) {$/;"	f	class:recomm_engine::RecommEngineHandler
+getStatusDetails	recomm_engine_handler.h	/^  inline void getStatusDetails(std::string& _return) {_return = "ok";}$/;"	f	class:recomm_engine::RecommEngineHandler
+getVersion	recomm_engine_handler.h	/^  inline void getVersion(std::string& _return) {$/;"	f	class:recomm_engine::RecommEngineHandler
+hash_	redis_cluster.h	/^    Hash hash_;$/;"	m	class:redis_cluster::HashRing
+hash_ring_	redis_cluster.h	/^    HashRing<CityHash> hash_ring_;$/;"	m	class:redis_cluster::RedisCluster
+i64	story_management_handler.cc	/^typedef long long i64;$/;"	t	file:
+idl	story_profile_storage.h	/^namespace idl {$/;"	n	namespace:recomm_engine
+idl	user_profile_storage.h	/^namespace idl {$/;"	n	namespace:recomm_engine
+instance_	algo_plugin_manager.cc	/^    AlgoPluginManager* AlgoPluginManager::instance_ = new AlgoPluginManager;$/;"	m	class:recomm_engine::AlgoPluginManager	file:
+instance_	algo_plugin_manager.h	/^            static AlgoPluginManager* instance_;$/;"	m	class:recomm_engine::AlgoPluginManager
+instance_	monitor_manager.cc	/^MonitorManager MonitorManager::instance_;$/;"	m	class:recomm_engine::MonitorManager	file:
+instance_	monitor_manager.h	/^            static MonitorManager instance_;$/;"	m	class:recomm_engine::MonitorManager
+instance_	story_profile_storage.cc	/^StoryProfileStorage StoryProfileStorage::instance_;$/;"	m	class:recomm_engine::StoryProfileStorage	file:
+instance_	story_profile_storage.h	/^  static StoryProfileStorage instance_;$/;"	m	class:recomm_engine::StoryProfileStorage
+ip_	redispp.h	/^  std::string ip_;$/;"	m	class:redis::Client
+is_open_slave_	redis_cluster.h	/^    int is_open_slave_;$/;"	m	class:redis_cluster::RedisCluster
+is_valid_	local_dict.h	/^  bool is_valid_;$/;"	m	class:recomm_engine::LocalDict
+iterator_	story_profile_storage.h	/^  boost::scoped_ptr< ::leveldb::Iterator> iterator_;$/;"	m	class:recomm_engine::StoryProfileStorage::Iterator
+last_error	redispp.h	/^  const std::string &last_error() const {$/;"	f	class:redis::Client
+last_error_	redispp.h	/^  std::string last_error_;$/;"	m	class:redis::Client
+leveldb	local_dict.h	/^namespace leveldb {$/;"	n
+leveldb	story_profile_storage.h	/^namespace leveldb {$/;"	n
+life_in_seconds_	user_profile_storage.h	/^  int life_in_seconds_;$/;"	m	class:recomm_engine::UserProfileStorage
+main	server.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+master	redis_cluster.h	/^      redis::Client *master;$/;"	m	struct:redis_cluster::RedisCluster::__anon2
+mutex	redis_cluster.h	/^      pthread_mutex_t mutex;$/;"	m	struct:redis_cluster::RedisCluster::__anon2
+node_name	redis_cluster.h	/^      std::string node_name;$/;"	m	struct:redis_cluster::HashRing::Node_t
+num_error_responses_	monitor_manager.h	/^            boost::atomic<int> num_error_responses_;$/;"	m	class:recomm_engine::MonitorManager
+num_indexed_stories_current_	monitor_manager.h	/^            boost::atomic<int> num_indexed_stories_current_;$/;"	m	class:recomm_engine::MonitorManager
+num_indexed_stories_total_	monitor_manager.h	/^            boost::atomic<int> num_indexed_stories_total_;$/;"	m	class:recomm_engine::MonitorManager
+num_plugins_	algo_plugin_manager.h	/^            int num_plugins_[2];$/;"	m	class:recomm_engine::AlgoPluginManager
+num_processed_requests_	monitor_manager.h	/^            boost::atomic<int> num_processed_requests_;$/;"	m	class:recomm_engine::MonitorManager
+num_recommended_results_	monitor_manager.h	/^            boost::atomic<int> num_recommended_results_;$/;"	m	class:recomm_engine::MonitorManager
+operator ()	redis_cluster.h	/^  uint32 operator()(const char *str) const {$/;"	f	struct:redis_cluster::CityHash
+persistence_	local_dict.h	/^  boost::scoped_ptr<leveldb::DB> persistence_;$/;"	m	class:recomm_engine::LocalDict
+plugins_	algo_plugin_manager.h	/^                boost::shared_ptr<IAlgoPlugin> > plugins_[2];$/;"	m	class:recomm_engine::AlgoPluginManager
+port_	redispp.h	/^  int port_;$/;"	m	class:redis::Client
+query	recomm_engine_handler.cc	/^    void RecommEngineHandler::query(idl::RecommendationResponse& _return, const idl::RecommendationRequest& request) {$/;"	f	class:recomm_engine::RecommEngineHandler
+recomm_engine	algo_plugin_manager.cc	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	algo_plugin_manager.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	local_dict.cc	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	local_dict.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	monitor_manager.cc	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	monitor_manager.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	recomm_engine_handler.cc	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	recomm_engine_handler.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	story_management_handler.cc	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	story_management_handler.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	story_profile_storage.cc	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	story_profile_storage.h	/^namespace recomm_engine {$/;"	n
+recomm_engine	user_profile_storage.cc	/^namespace recomm_engine {$/;"	n	file:
+recomm_engine	user_profile_storage.h	/^namespace recomm_engine {$/;"	n
+redis	redispp.cc	/^namespace redis {$/;"	n	file:
+redis	redispp.h	/^namespace redis {$/;"	n
+redis	user_profile_storage.h	/^namespace redis {$/;"	n
+redis_cluster	redis_cluster.cc	/^namespace redis_cluster{$/;"	n	file:
+redis_cluster	redis_cluster.h	/^namespace redis_cluster {$/;"	n
+reinitialize	recomm_engine_handler.h	/^  inline void reinitialize() {return;}$/;"	f	class:recomm_engine::RecommEngineHandler
+replicas	redis_cluster.h	/^      unsigned int replicas;$/;"	m	struct:redis_cluster::HashRing::Node_t
+retrieval_handler_	recomm_engine_handler.h	/^  boost::scoped_ptr<retrieving::RetrievalHandler> retrieval_handler_;$/;"	m	class:recomm_engine::RecommEngineHandler
+retrieving	recomm_engine_handler.h	/^namespace retrieving {$/;"	n	namespace:recomm_engine
+reverse_	story_profile_storage.h	/^  bool reverse_;$/;"	m	class:recomm_engine::StoryProfileStorage::Iterator
+ring_	redis_cluster.h	/^    NodeMap ring_;$/;"	m	class:redis_cluster::HashRing
+servers_	redis_cluster.h	/^    ServerMap servers_;$/;"	m	class:redis_cluster::RedisCluster
+setOption	recomm_engine_handler.h	/^  inline void setOption(const std::string& key, const std::string& value) {$/;"	f	class:recomm_engine::RecommEngineHandler
+shutdown	recomm_engine_handler.h	/^  inline void shutdown() {return;}$/;"	f	class:recomm_engine::RecommEngineHandler
+slave	redis_cluster.h	/^      redis::Client *slave;$/;"	m	struct:redis_cluster::RedisCluster::__anon2
+user_profile_cache_	user_profile_storage.h	/^  boost::scoped_ptr<LocalDict> user_profile_cache_;$/;"	m	class:recomm_engine::UserProfileStorage
+user_profile_redis_	user_profile_storage.h	/^  boost::scoped_ptr<redis_cluster::RedisCluster> user_profile_redis_;$/;"	m	class:recomm_engine::UserProfileStorage
+user_profile_storage_	recomm_engine_handler.h	/^  boost::scoped_ptr<UserProfileStorage> user_profile_storage_;$/;"	m	class:recomm_engine::RecommEngineHandler
+~AlgoPluginManager	algo_plugin_manager.cc	/^    AlgoPluginManager::~AlgoPluginManager() {$/;"	f	class:recomm_engine::AlgoPluginManager
+~Client	redispp.cc	/^Client::~Client() {$/;"	f	class:redis::Client
+~Iterator	story_profile_storage.cc	/^StoryProfileStorage::Iterator::~Iterator() {$/;"	f	class:recomm_engine::StoryProfileStorage::Iterator
+~LocalDict	local_dict.cc	/^LocalDict::~LocalDict() {}$/;"	f	class:recomm_engine::LocalDict
+~MonitorManager	monitor_manager.cc	/^MonitorManager::~MonitorManager() {$/;"	f	class:recomm_engine::MonitorManager
+~RecommEngineHandler	recomm_engine_handler.cc	/^    RecommEngineHandler::~RecommEngineHandler() { }$/;"	f	class:recomm_engine::RecommEngineHandler
+~RedisCluster	redis_cluster.cc	/^RedisCluster::~RedisCluster() {$/;"	f	class:redis_cluster::RedisCluster
+~StoryManagementHandler	story_management_handler.cc	/^StoryManagementHandler::~StoryManagementHandler() {$/;"	f	class:recomm_engine::StoryManagementHandler
+~StoryProfileStorage	story_profile_storage.cc	/^StoryProfileStorage::~StoryProfileStorage() {$/;"	f	class:recomm_engine::StoryProfileStorage
+~UserProfileStorage	user_profile_storage.cc	/^UserProfileStorage::~UserProfileStorage() {$/;"	f	class:recomm_engine::UserProfileStorage
